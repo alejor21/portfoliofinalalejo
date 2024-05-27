@@ -28,9 +28,7 @@ const Header = () => {
         </ul>
         <div className='flex items-center gap-6'>
           <a href='#contact'>
-            <button className='btn btn-outline md:!flex !hidden'>
-              <i className='fa-regular fa-paper-plane'></i> Let's Talk
-            </button>
+            
           </a>
           <span className='theme-switch md:hidden'>
             <i className='fa-solid fa-circle-half-stroke cursor-pointer'></i>

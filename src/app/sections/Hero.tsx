@@ -1,8 +1,27 @@
+import React, { useState, useEffect } from 'react';
 import LogoPerson from './../../assets/images/portada.jpg';
+import LogoPerson2 from './../../assets/images/portada2.jpg'; // Importa otras imágenes si las tienes
 import herramienta from './../../assets/images/herramienta1.png';
 import herramienta2 from './../../assets/images/herramienta2.png';
 
 const Hero = () => {
+  const [currentLogo, setCurrentLogo] = useState(LogoPerson); // Estado para la imagen actual
+  const [isFirstImage, setIsFirstImage] = useState(true); // Estado para alternar entre las imágenes
+
+  // Función para alternar entre las imágenes
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (isFirstImage) {
+        setCurrentLogo(LogoPerson2);
+      } else {
+        setCurrentLogo(LogoPerson);
+      }
+      setIsFirstImage(!isFirstImage);
+    }, 3000); // Cambia la imagen cada 5 segundos
+
+    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta
+  }, [isFirstImage]); // Dependencia para ejecutar el efecto cuando isFirstImage cambia
+
   return (
     <section
       id='home'
@@ -35,57 +54,63 @@ const Hero = () => {
           <div className='flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9'>
             <p className='text-xs'>me puedes seguir en linkdln,github o facebook</p>
             <div className='flex justify-end gap-3'>
-    <a href='https://github.com/alejor21' className='social-icon'>
-        <i className='fa-brands fa-github'></i>
-    </a>
-    <a href='https://linkedin.com/in/tuusuario' className='social-icon'>
-        <i className='fa-brands fa-linkedin'></i>
-    </a>
-    <a href='https://www.facebook.com/profile.php?id=100007089857261&locale=es_LA' className='social-icon'>
-        <i className='fa-brands fa-facebook'></i>
-    </a>
-</div>
-
+              <a href='https://github.com/alejor21' className='social-icon'>
+                <i className='fa-brands fa-github'></i>
+              </a>
+              <a href='https://linkedin.com/in/tuusuario' className='social-icon'>
+                <i className='fa-brands fa-linkedin'></i>
+              </a>
+              <a href='https://www.facebook.com/profile.php?id=100007089857261&locale=es_LA' className='social-icon'>
+                <i className='fa-brands fa-facebook'></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className='lg:col-span-2 md:col-span-3'>
           <img
-            src={LogoPerson}
+            src={currentLogo}
             className='w-2/3 rounded-full mx-auto md:w-full max-w-96 md:mt-0 mt-5'
             alt=''
           />
         </div>
-        
         <div className='lg:col-span-2 md:col-span-3'>
-  <ul className='text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between'>
-    <li data-slot='count'></li>
-    <li>
-      herramientas <span className='text-primary'>que utilizo</span>
-    </li>
-    <br />
-    <li data-slot='count'></li>
-    <li>
-       <span className='text-primary'></span>
-    </li>
-    <li>
-      <button className='btn btn-outline lg:mt-10 md:mt-0 mt-10'>
-        <i className='fa-solid fa-download'></i> cv
-      </button>
+          <ul className='text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between'>
+            <li data-slot='count'></li>
+            <li>
+              herramientas <span className='text-primary'>que utilizo</span>
+              <div className="flex items-center"> {/* Contenedor flex para alinear horizontalmente */}
+                <img
+                  src={herramienta}
+                  className='w-10 h-10 rounded-full mx-2 md:w-20 md:h-20 max-w-40'
+                  alt='Herramienta 1'
+                />
+                <img
+                  src={herramienta2}
+                  className='w-10 h-10 rounded-full mx-2 md:w-20 md:h-20 max-w-40'
+                  alt='Herramienta 2'
+                />
+                <img
+                  src={herramienta2}
+                  className='w-10 h-10 rounded-full mx-2 md:w-20 md:h-20 max-w-40'
+                  alt='Herramienta 2'
+                />
+                <img
+                  src={herramienta2}
+                  className='w-10 h-10 rounded-full mx-2 md:w-20 md:h-20 max-w-40'
+                  alt='Herramienta 2'
+                />
+                <img
+                  src={herramienta2}
+                  className='w-10 h-10 rounded-full mx-2 md:w-20 md:h-20 max-w-40'
+                  alt='Herramienta 2'
+                />
+</div>
+
+     
     </li>
   </ul>
   
-  <img
-    src={herramienta}
-    className='w-20 rounded-full mx-auto md:w-full max-w-96 md:mt-0 mt-5'
-    alt='Herramienta 1'
-  />
-</div>
-<div className='lg:col-span-2 md:col-span-3'>
-<img
-  src={herramienta2}
-  className='w-10 rounded-full mx-auto md:w-full max-w-96 md:mt-0 mt-5'
-  alt='Herramienta 2'
-/>
+
 
         </div>
 
@@ -94,17 +119,8 @@ const Hero = () => {
           <ul className='text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between'>
             <li data-slot='count'></li>
             <li>
-              herramientas <span className='text-primary'>que utilizo</span>
-            </li>
-            <br />
-            <li data-slot='count'></li>
-            <li>
-              normalmente me centro <span className='text-primary'>en</span>
-            </li>
-            <li>
-              <button className='btn btn-outline lg:mt-10 md:mt-0 mt-10'>
-                <i className='fa-solid fa-download'></i> 
-              </button>
+             
+             
             </li>
           </ul>
         </div>
