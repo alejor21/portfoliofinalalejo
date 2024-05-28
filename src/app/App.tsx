@@ -10,7 +10,7 @@ import DropdownButton from './sections/DropdownButton';
 
 function App() {
   return (
-    <div className='dark:text-gray-200 dark:bg-slate-900'>
+    <div className='dark:text-gray-200 bg-purple-250'>
       <Header />
       <div className="flex justify-between items-center p-4">
         <DropdownButton />
