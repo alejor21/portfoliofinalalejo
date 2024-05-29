@@ -1,4 +1,17 @@
+import { useState } from 'react';
+
 const Header = () => {
+  // Estado para almacenar el idioma actual
+  const [language, setLanguage] = useState('Español');
+
+  // Función para alternar entre Español e Inglés
+  const toggleLanguage = () => {
+    // Cambiar el estado del idioma
+    setLanguage(prevLanguage => prevLanguage === 'Español' ? 'English' : 'Español');
+    // Aquí puedes agregar lógica adicional para cambiar el idioma de tu aplicación,
+    // como cambiar la traducción de los textos en la aplicación.
+  };
+
   return (
     <header className='fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300 bg-blue-500'>
       <nav className='flex justify-between items-center max-w-6xl mx-auto px-2'>
@@ -17,11 +30,10 @@ const Header = () => {
           <li>
             <a href='#contact'>contacto</a>
           </li>
-         
         </ul>
         <div className='flex items-center gap-6'>
-          <a href='#contact'>
-          </a>
+          {/* Botón para cambiar el idioma */}
+          <button onClick={toggleLanguage}>{language === 'Español' ? 'English' : 'Español'}</button>
           <span className='theme-switch md:hidden'>
             <i className='fa-solid fa-circle-half-stroke cursor-pointer'></i>
           </span>
