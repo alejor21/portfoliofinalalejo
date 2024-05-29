@@ -1,13 +1,14 @@
 
 import downhill from './../../assets/images/downhill.jpg';
 import motocross from './../../assets/images/motocross.jpg';
-import bicileta from './../../assets/images/bicicleta.jpg';
+import bicicleta from './../../assets/images/bicicleta.jpg';
 import bici2 from './../../assets/images/bici2.jpg';
 import moto2 from './../../assets/images/moto2.jpg';
 import moto3 from './../../assets/images/motoyo.jpg';
 import setup from './../../assets/images/setup.jpg';
 import novia from './../../assets/images/novia.jpg';
 import amigos from './../../assets/images/amigos.jpg';
+
 const About = () => {
   return (
     <section id='about' className='container min-h-screen flex-center'>
@@ -18,7 +19,7 @@ const About = () => {
             Me gusta mucho jugar videojuegos, también estoy muy enfocado en las redes sociales, me gusta la edición de videos y fotografía, y me apasiona montar bicicleta y moto. Por lo general, practico downhill y motocross. También me gustan mucho los deportes de contacto.
           </p>
         </div>
-        <div className='max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 text-lg sm:max-w-full max-w-sm hover:brightness-90 mx-auto sm:text-left text-center hover:cursor-pointer shadow-sm mt-10 rounded-xl bg-gray-100 dark:bg-slate-800 p-7 flex md:flex-row flex-col items-center gap-12'>
+        <div className='max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 text-lg sm:max-w-full hover:brightness-90 mx-auto sm:text-left text-center hover:cursor-pointer shadow-sm mt-10 rounded-xl bg-gray-100 dark:bg-slate-800 p-7 md:flex-row flex-col items-center'>
           <div className='bg-black p-3 rounded-md'>
             <div className='text-primary'>
               <h6 className='font-semibold whitespace-nowrap mt-3'>
@@ -31,7 +32,7 @@ const About = () => {
                   alt='downhill'
                 />
                 <img
-                  src={bicileta}
+                  src={bicicleta}
                   className='w-full h-full rounded-md'
                   alt='downhill adicional 1'
                 />
@@ -102,7 +103,7 @@ const About = () => {
             </div>
             <div>
               <p className='text-base text-white leading-6 text-balance mt-3'>
-                en mis ratos libres me gusta mucho jugar en mi computador, editar videos e imagenes pero tambien me gusta pasar momentos con las personas que quiero 
+                En mis ratos libres me gusta mucho jugar en mi computadora, editar videos e imágenes, pero también me gusta pasar momentos con las personas que quiero.
               </p>
             </div>
           </div>

@@ -1,9 +1,10 @@
 
-import herramienta from './../../assets/images/herramienta2.png';
-import herramienta2 from './../../assets/images/herramienta1.png';
+import herramienta1 from './../../assets/images/herramienta1.png';
+import herramienta2 from './../../assets/images/herramienta2.png';
 import herramienta3 from './../../assets/images/herramienta3.png';
 import herramienta4 from './../../assets/images/herramienta4.png';
 import herramienta5 from './../../assets/images/herramienta5.png';
+
 const Tools = () => {
   return (
     <section
@@ -18,7 +19,7 @@ const Tools = () => {
             </h2>
             <div className='flex justify-center gap-4'>
               <img
-                src={herramienta}
+                src={herramienta1}
                 className='w-32 h-32 rounded-full'
                 alt='Herramienta 1'
               />
@@ -30,23 +31,23 @@ const Tools = () => {
               <img
                 src={herramienta3}
                 className='w-32 h-32 rounded-full'
-                alt='Herramienta 2'
+                alt='Herramienta 3'
               />
               <img
                 src={herramienta4}
                 className='w-32 h-32 rounded-full'
-                alt='Herramienta 2'
+                alt='Herramienta 4'
               />
               <img
                 src={herramienta5}
                 className='w-32 h-32 rounded-full'
-                alt='Herramienta 2'
+                alt='Herramienta 5'
               />
             </div>
           </div>
           <div className='dark:bg-slate-800 bg-slate-50 dark:text-gray-100 text-gray-800 rounded-lg shadow-xl mx-auto md:w-2/3 py-14 px-7 w-full mt-10'>
             <h3 className='font-semibold text-3xl'>
-              conecta <br />
+              Conéctate <br />
               <span className='text-primary'>conmigo</span>
             </h3>
             <div className='flex items-center justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9'>
@@ -70,4 +71,3 @@ const Tools = () => {
 };
 
 export default Tools;
-
