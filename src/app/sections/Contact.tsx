@@ -1,4 +1,4 @@
-import React from 'react';
+
 import herramienta from './../../assets/images/herramienta2.png';
 import herramienta2 from './../../assets/images/herramienta1.png';
 import herramienta3 from './../../assets/images/herramienta3.png';

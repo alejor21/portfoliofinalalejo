@@ -1,7 +1,6 @@
-import React from 'react';
+
 import downhill from './../../assets/images/downhill.jpg';
 import motocross from './../../assets/images/motocross.jpg';
-import videojuegos from './../../assets/images/downhill.jpg';
 import bicileta from './../../assets/images/bicicleta.jpg';
 import bici2 from './../../assets/images/bici2.jpg';
 import moto2 from './../../assets/images/moto2.jpg';
