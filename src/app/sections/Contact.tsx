@@ -1,7 +1,9 @@
 import React from 'react';
-import herramienta from './../../assets/images/amigos.jpg';
-import herramienta2 from './../../assets/images/novia.jpg';
-
+import herramienta from './../../assets/images/herramienta2.png';
+import herramienta2 from './../../assets/images/herramienta1.png';
+import herramienta3 from './../../assets/images/herramienta3.png';
+import herramienta4 from './../../assets/images/herramienta4.png';
+import herramienta5 from './../../assets/images/herramienta5.png';
 const Tools = () => {
   return (
     <section
@@ -26,17 +28,17 @@ const Tools = () => {
                 alt='Herramienta 2'
               />
               <img
-                src={herramienta2}
+                src={herramienta3}
                 className='w-32 h-32 rounded-full'
                 alt='Herramienta 2'
               />
               <img
-                src={herramienta2}
+                src={herramienta4}
                 className='w-32 h-32 rounded-full'
                 alt='Herramienta 2'
               />
               <img
-                src={herramienta2}
+                src={herramienta5}
                 className='w-32 h-32 rounded-full'
                 alt='Herramienta 2'
               />
@@ -44,8 +46,8 @@ const Tools = () => {
           </div>
           <div className='dark:bg-slate-800 bg-slate-50 dark:text-gray-100 text-gray-800 rounded-lg shadow-xl mx-auto md:w-2/3 py-14 px-7 w-full mt-10'>
             <h3 className='font-semibold text-3xl'>
-              Connect With <br />
-              <span className='text-primary'>Me</span>
+              conecta <br />
+              <span className='text-primary'>conmigo</span>
             </h3>
             <div className='flex items-center justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9'>
               <div className='flex justify-end gap-3'>

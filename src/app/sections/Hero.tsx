@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import LogoPerson from './../../assets/images/portada.jpg';
 import LogoPerson2 from './../../assets/images/portada2.jpg';
 
@@ -60,17 +60,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className='flex items-center justify-center md:justify-start dark:text-gray-200 text-gray-600 gap-6 mt-5'>
-            <p className='text-xs'>sígueme también en YouTube y Twitch</p>
-            <div className='flex justify-end gap-3 text-3xl'>
-              <a href='https://www.youtube.com/channel/UCN8y7U0y2FY0nzcRLE8MDmA' className='social-icon text-red-600'>
-                <i className='fa-brands fa-youtube'></i>
-              </a>
-              <a href='https://www.twitch.tv/alejogodtv' className='social-icon text-purple-600'>
-                <i className='fa-brands fa-twitch'></i>
-              </a>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
