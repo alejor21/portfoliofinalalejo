@@ -1,4 +1,4 @@
-import React from 'react';
+
 import web from './../../assets/images/webdis.jpg';
 import mobile from './../../assets/images/tipos-de-app-moviles.png';
 import Pro3 from './../../assets/images/wireframes.png';
@@ -36,7 +36,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Apartado adicional para insertar imágenes pequeñas */}
         <div className='mt-8'>
           <h4 className='text-xl font-bold'>otros proyectos</h4>
           <p className='text-white-500 mt-2'>Aquí puedes ver más imágenes de mis proyectos.</p>
