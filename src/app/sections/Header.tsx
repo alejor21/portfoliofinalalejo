@@ -1,15 +1,14 @@
 import { useState } from 'react';
 
 const Header = () => {
-  // Estado para almacenar el idioma actual
+  
   const [language, setLanguage] = useState('Español');
 
-  // Función para alternar entre Español e Inglés
+  
   const toggleLanguage = () => {
-    // Cambiar el estado del idioma
+    
     setLanguage(prevLanguage => prevLanguage === 'Español' ? 'English' : 'Español');
-    // Aquí puedes agregar lógica adicional para cambiar el idioma de tu aplicación,
-    // como cambiar la traducción de los textos en la aplicación.
+    
   };
 
   return (
