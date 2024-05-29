@@ -18,19 +18,19 @@ const Projects = () => {
         <br />
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           <div className='group'>
-            <img className='w-full rounded-md cursor-pointer' src={web} alt='Página Web' />
+            <img className='w-full rounded-md ' src={web} alt='Página Web' />
             <div className='text-lg font-bold mt-2'>Página Web</div>
             <div className='text-white-500'>algunas de las páginas web diseñadas</div>
           </div>
           <div className='group'>
-            <img className='w-full rounded-md cursor-pointer' src={Pro3} alt='Wireframe' />
+            <img className='w-full rounded-md ' src={Pro3} alt='Wireframe' />
             <div className='text-lg font-bold mt-2'>Wireframe</div>
             <div className='text-white-500'>algunos de mis wireframes</div>
           </div>
           <div className='group'>
-            <img className='w-full rounded-md cursor-pointer' src={mobile} alt='Página Mobile' />
+            <img className='' src={mobile} alt='Página Mobile' />
             <div className='text-lg font-bold mt-2'>Página Mobile</div>
-            {/* Aquí puedes agregar texto adicional si es necesario */}
+            {}
           </div>
         </div>
         <div className='mt-8'>
@@ -40,17 +40,17 @@ const Projects = () => {
             <div>
               <img className='w-full rounded-md' src={maquinas} alt='Proyecto 1' />
               <h5 className='text-lg font-bold mt-2'>maquinas virtuales</h5>
-              {/* Puedes agregar texto adicional si es necesario */}
+              {}
             </div>
             <div>
               <img className='w-full rounded-md' src={inventario} alt='Proyecto 2' />
               <h5 className='text-lg font-bold mt-2'>sistemas de inventario</h5>
-              {/* Puedes agregar texto adicional si es necesario */}
+              {}
             </div>
             <div>
               <img className='w-full rounded-md' src={apis} alt='Proyecto 3' />
               <h5 className='text-lg font-bold mt-2'>apis</h5>
-              {/* Puedes agregar texto adicional si es necesario */}
+              {}
             </div>
           </div>
         </div>

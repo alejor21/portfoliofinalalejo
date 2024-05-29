@@ -19,7 +19,7 @@ const About = () => {
             Me gusta mucho jugar videojuegos, también estoy muy enfocado en las redes sociales, me gusta la edición de videos y fotografía, y me apasiona montar bicicleta y moto. Por lo general, practico downhill y motocross. También me gustan mucho los deportes de contacto.
           </p>
         </div>
-        <div className='max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 text-lg sm:max-w-full hover:brightness-90 mx-auto sm:text-left text-center hover:cursor-pointer shadow-sm mt-10 rounded-xl bg-gray-100 dark:bg-slate-800 p-7 md:flex-row flex-col items-center'>
+        <div className='max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 text-lg sm:max-w-full hover:brightness-90 mx-auto sm:text-left text-center  shadow-sm mt-10 rounded-xl bg-gray-100 dark:bg-slate-800 p-7 md:flex-row flex-col items-center'>
           <div className='bg-black p-3 rounded-md'>
             <div className='text-primary'>
               <h6 className='font-semibold whitespace-nowrap mt-3'>
