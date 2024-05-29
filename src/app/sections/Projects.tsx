@@ -47,12 +47,12 @@ const Projects = () => {
               <p className='text-gray-500'></p>
             </div>
             <div>
-              <img className='w-full rounded-md' src={apis} alt='Proyecto 2' />
+              <img className='w-full rounded-md' src={inventario} alt='Proyecto 2' />
               <h5 className='text-lg font-bold mt-2'>sistemas de inventario</h5>
               <p className='text-gray-500'></p>
             </div>
             <div>
-              <img className='w-full rounded-md' src={inventario} alt='Proyecto 3' />
+              <img className='w-full rounded-md' src={apis} alt='Proyecto 3' />
               <h5 className='text-lg font-bold mt-2'>apis</h5>
               <p className='text-gray-500'></p>
             </div>
